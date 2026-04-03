@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         <div class="card-body">
           <h3>${p.title}</h3>
           <p>${p.description}</p>
-          ${p.tags ? `<div style="margin-top:0.75rem;">${p.tags.map(t => `<span class="card-tag">${t}</span>`).join('')}</div>` : ''}
         </div>
       </a>
     `).join('');

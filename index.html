@@ -12,7 +12,7 @@
   <section class="hero">
     <div class="hero-inner container">
       <h1>Urban <span class="highlight">Visual</span><br>Computing Lab</h1>
-      <p class="subtitle">Advancing research in urban modeling, visual computing, and computational methods — from city-scale reconstruction to computational archaeology.</p>
+      <p class="subtitle">Welcome to the Urban Visual Computing Lab at Purdue Computer Science. Our research spans urban modeling, 3D reconstruction, and computational methods, combining computer vision, graphics, and AI to tackle challenges from city-scale analysis to archaeological site restoration.</p>
     </div>
   </section>
 
@@ -98,7 +98,9 @@
         document.getElementById('latest-news').innerHTML = sorted.map(n => `
           <div class="news-item">
             <div class="news-date">${new Date(n.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</div>
-            <h3>${n.link ? `<a href="${n.link}">${n.title}</a>` : n.title}</h3>
+            <h3>${n.link ? `<a href="${n.link}">${n.title}</a>` : n.title}
+              <span class="news-type-badge ${n.type}">${n.type}</span>
+            </h3>
           </div>
         `).join('');
       } catch(e) { console.error('Failed to load news:', e); }
