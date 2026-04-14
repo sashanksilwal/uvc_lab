@@ -211,6 +211,75 @@ img { max-width: 100%; height: auto; }
   position: relative;
   z-index: 1;
 }
+.hero-carousel { display: none; }
+@media (min-width: 1024px) {
+  .hero-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 3.5rem;
+    align-items: center;
+  }
+  .hero-text { min-width: 0; }
+  .hero-carousel {
+    display: block;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    border: 1px solid rgba(201,149,60,0.2);
+  }
+  .hero-carousel-track {
+    position: absolute;
+    inset: 0;
+  }
+  .hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0a0a0a;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+  }
+  .hero-slide.active { opacity: 1; }
+  .hero-slide.contain { background-size: contain; }
+  .hero-carousel::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.4) 100%);
+    pointer-events: none;
+  }
+  .hero-carousel-dots {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    z-index: 2;
+  }
+  .hero-carousel-dots button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255,255,255,0.4);
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.3s, width 0.3s;
+  }
+  .hero-carousel-dots button.active {
+    background: var(--color-accent);
+    width: 24px;
+    border-radius: 4px;
+  }
+  .hero .subtitle { max-width: none; }
+}
 .hero-label {
   font-family: var(--font-display);
   font-size: 0.75rem;

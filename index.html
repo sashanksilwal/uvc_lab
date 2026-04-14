@@ -11,8 +11,18 @@
 
   <section class="hero">
     <div class="hero-inner container">
-      <h1>Urban <span class="highlight">Visual</span><br>Computing Lab</h1>
-      <p class="subtitle">Welcome to the Urban Visual Computing Lab at Purdue Computer Science. Our research spans urban modeling, 3D reconstruction, and computational methods, combining computer vision, graphics, and AI to tackle challenges from city-scale analysis to archaeological site restoration.</p>
+      <div class="hero-text">
+        <h1>Urban <span class="highlight">Visual</span><br>Computing Lab</h1>
+        <p class="subtitle">Welcome to the Urban Visual Computing Lab at Purdue Computer Science. Our research spans urban modeling, 3D reconstruction, and computational methods, combining computer vision, graphics, and AI to tackle challenges from city-scale analysis to archaeological site restoration.</p>
+      </div>
+      <div class="hero-carousel" aria-hidden="true">
+        <div class="hero-carousel-track" id="hero-carousel-track">
+          <div class="hero-slide active" style="background-image:url('images/carousel/slide-1.png')"></div>
+          <div class="hero-slide" style="background-image:url('images/carousel/slide-2.png')"></div>
+          <div class="hero-slide" style="background-image:url('images/carousel/slide-3.png')"></div>
+        </div>
+        <div class="hero-carousel-dots" id="hero-carousel-dots"></div>
+      </div>
     </div>
   </section>
 
@@ -55,6 +65,29 @@
   <script src="js/main.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', async () => {
+      // Hero carousel
+      (() => {
+        const slides = document.querySelectorAll('.hero-slide');
+        const dotsWrap = document.getElementById('hero-carousel-dots');
+        if (!slides.length || !dotsWrap) return;
+        let i = 0;
+        slides.forEach((_, idx) => {
+          const b = document.createElement('button');
+          if (idx === 0) b.classList.add('active');
+          b.addEventListener('click', () => go(idx));
+          dotsWrap.appendChild(b);
+        });
+        const dots = dotsWrap.querySelectorAll('button');
+        const go = (n) => {
+          slides[i].classList.remove('active');
+          dots[i].classList.remove('active');
+          i = n;
+          slides[i].classList.add('active');
+          dots[i].classList.add('active');
+        };
+        setInterval(() => go((i + 1) % slides.length), 5000);
+      })();
+
       // Research highlights
       try {
         const projects = await fetchData('data/projects.json');
