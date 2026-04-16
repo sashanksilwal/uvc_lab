@@ -113,7 +113,7 @@
               : `<div class="pub-thumb" style="display:flex;align-items:center;justify-content:center;background:#e9ecef;color:#adb5bd;font-size:1.5rem;">&#128196;</div>`}
             <div class="pub-info">
               <h3><a href="publication.html?id=${p.slug}">${p.title}</a></h3>
-              <p class="pub-citation">${p.authors} (${p.year}). ${p.title}. <em>${p.venue}</em>${p.venueDetails ? ', ' + p.venueDetails : ''}.</p>
+              <p class="pub-citation">${p.authors} (${p.year}). ${p.title}.${p.venue ? ` <em>${p.venue}</em>${p.venueDetails ? ', ' + p.venueDetails : ''}.` : (p.venueDetails ? ` ${p.venueDetails}.` : '')}</p>
               <div class="pub-buttons">
                 ${p.bibtex ? `<button class="pub-btn" onclick="navigator.clipboard.writeText(\`${p.bibtex.replace(/`/g, '\\`')}\`);this.textContent='Copied!';setTimeout(()=>this.textContent='BibTeX',2000)">BibTeX</button>` : ''}
                 ${p.doi ? `<a class="pub-btn" href="${p.doi}" target="_blank">DOI</a>` : ''}
