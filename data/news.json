@@ -1,51 +1,23 @@
 [
   {
-    "date": "2026-04-01",
+    "date": "2026-03-31",
     "title": "Paper accepted at Communications of the ACM",
     "description": "Our paper \"Where Are the City Trees?\" on monitoring urban trees using generative AI has been published in CACM.",
     "link": "publication.html?id=firoze2026-city-trees",
     "type": "publication"
   },
   {
-    "date": "2026-01-15",
-    "title": "Paper accepted at AAAI 2026",
-    "description": "Adnan Firoze's paper on building instance segmentation for dense urban settlements accepted at AAAI 2026.",
-    "link": "publication.html?id=firoze2026-building-segmentation",
-    "type": "publication"
-  },
-  {
-    "date": "2025-06-01",
-    "title": "Paper accepted at CVPR 2025",
-    "description": "Aocheng Li's paper on self-supervised point cloud completion for archaeological site restoration accepted at CVPR 2025.",
-    "link": "publication.html?id=li2025-archaeology-pointcloud",
-    "type": "publication"
-  },
-  {
-    "date": "2025-04-01",
-    "title": "Paper accepted at ICLR 2025",
-    "description": "\"Refine-by-Align\" paper on reference-guided artifacts refinement accepted at ICLR 2025.",
-    "link": "publication.html?id=song2025-refine-by-align",
-    "type": "publication"
-  },
-  {
-    "date": "2026-03-15",
+    "date": "2026-03-14",
     "title": "UVC Lab website launched",
     "description": "We are excited to announce the launch of the Urban Visual Computing Lab website.",
     "link": "",
     "type": "general"
   },
   {
-    "date": "2024-10-01",
-    "title": "Two papers accepted at ECCV 2024",
-    "description": "COHO (city-scale urban layout generation) and EpipolarGAN (omnidirectional image synthesis) accepted at ECCV 2024.",
-    "link": "",
-    "type": "publication"
-  },
-  {
-    "date": "2024-06-01",
-    "title": "Paper accepted at CVPR 2024",
-    "description": "IMPRINT: Generative Object Compositing accepted at CVPR 2024.",
-    "link": "publication.html?id=song2024-imprint",
+    "date": "2026-01-14",
+    "title": "Paper accepted at AAAI 2026",
+    "description": "Adnan Firoze's paper on building instance segmentation for dense urban settlements accepted at AAAI 2026.",
+    "link": "publication.html?id=firoze2026-building-segmentation",
     "type": "publication"
   }
 ]
