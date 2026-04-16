@@ -174,8 +174,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       ? `<img class="pub-thumb" src="${p.thumbnail}" alt="" onerror="this.style.display='none'">`
       : `<div class="pub-thumb" style="display:flex;align-items:center;justify-content:center;background:#e9ecef;color:#adb5bd;font-size:1.5rem;">&#128196;</div>`;
 
-    // Formatted citation string (APA-ish style)
-    const citation = `${p.authors} (${p.year}). ${p.title}. <em>${p.venue}</em>${p.venueDetails ? ', ' + p.venueDetails : ''}.${p.doi ? ' ' + p.doi : ''}`;
+    // Formatted citation string (APA-ish style). Venue + details are optional.
+    const venuePart = p.venue
+      ? ` <em>${p.venue}</em>${p.venueDetails ? ', ' + p.venueDetails : ''}.`
+      : (p.venueDetails ? ` ${p.venueDetails}.` : '');
+    const citation = `${p.authors} (${p.year}). ${p.title}.${venuePart}${p.doi ? ' ' + p.doi : ''}`;
 
     return `
       <div class="pub-card">

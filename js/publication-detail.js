@@ -39,7 +39,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Build the page HTML
     let html = `<h1>${pub.title}</h1>`;
     html += `<p class="authors">${pub.authors}</p>`;
-    html += `<p class="venue"><em>${pub.venue}</em>${pub.venueDetails ? ', ' + pub.venueDetails : ''} (${pub.year})</p>`;
+    const venueLine = pub.venue
+      ? `<em>${pub.venue}</em>${pub.venueDetails ? ', ' + pub.venueDetails : ''} `
+      : (pub.venueDetails ? `${pub.venueDetails} ` : '');
+    html += `<p class="venue">${venueLine}(${pub.year})</p>`;
 
     // Action buttons row (PDF, DOI, BibTeX, Video, Code)
     html += '<div class="pub-buttons">';
