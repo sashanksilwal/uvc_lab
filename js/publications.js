@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   function renderPubCard(p) {
     // Thumbnail: use image if available, otherwise show a placeholder icon
     const thumb = p.thumbnail
-      ? `<img class="pub-thumb" src="${p.thumbnail}" alt="" onerror="this.style.display='none'">`
+      ? `<img class="pub-thumb" src="${p.thumbnail}" alt="${p.title}" loading="lazy" onerror="this.style.display='none'">`
       : `<div class="pub-thumb" style="display:flex;align-items:center;justify-content:center;background:#e9ecef;color:#adb5bd;font-size:1.5rem;">&#128196;</div>`;
 
     // Formatted citation string (APA-ish style). Venue + details are optional.

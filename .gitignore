@@ -8,3 +8,5 @@ node_modules/
 .idea/
 papers/
 scripts/
+11ty_builds/
+images/_originals/

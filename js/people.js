@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const idx = allPeople.indexOf(m); // Index into allPeople for modal lookup
         html += `
           <div class="person-card" data-person-idx="${idx}" style="cursor:pointer;">
-            <img class="person-photo" src="${m.photo}" alt="${m.name}" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 120%22><rect fill=%22%23e9ecef%22 width=%22120%22 height=%22120%22/><text fill=%22%23adb5bd%22 font-size=%2240%22 x=%2250%25%22 y=%2255%25%22 text-anchor=%22middle%22>&#128100;</text></svg>'">
+            <img class="person-photo" src="${m.photo}" alt="${m.name}" loading="lazy" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 120%22><rect fill=%22%23e9ecef%22 width=%22120%22 height=%22120%22/><text fill=%22%23adb5bd%22 font-size=%2240%22 x=%2250%25%22 y=%2255%25%22 text-anchor=%22middle%22>&#128100;</text></svg>'">
             <h3>${m.name}</h3>
           </div>
         `;

@@ -10,7 +10,7 @@
     "doi": "https://doi.org/10.1609/aaai.v40i45.41187",
     "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/41187/45148",
     "bibtex": "@inproceedings{Firoze26AAAI,\n  author = {Firoze, Adnan and Yeh, Raymond A. and Aliaga, Daniel G.},\n  title = {Building Instance Segmentation for Dense Urban Settlements},\n  booktitle = {AAAI Conference on Artificial Intelligence},\n  year = {2026}\n}",
-    "thumbnail": "images/publications/firoze2026-building-segmentation.png",
+    "thumbnail": "images/publications/firoze2026-building-segmentation.jpg",
     "video": "",
     "code": "",
     "tags": [
@@ -28,7 +28,7 @@
     "doi": "https://doi.org/10.1145/3762636",
     "pdf": "https://www.cs.purdue.edu/cgvlab/www/resources/papers/Firoze-CACM-2026-Where.pdf",
     "bibtex": "@article{Firoze26CACM,\n  author = {Firoze, Adnan and Uppala, Akshaj and Darling, Lindsay and Yeh, Raymond A. and Benes, Bedrich and Hardiman, Brady and Fei, Songlin and Aliaga, Daniel},\n  title = {Where Are the City Trees? Monitoring Urban Trees across the U.S. Using Generative AI},\n  journal = {Communications of the ACM},\n  year = {2026},\n  volume = {69},\n  number = {4},\n  pages = {50--59},\n  doi = {10.1145/3762636}\n}",
-    "thumbnail": "images/publications/city-trees.png",
+    "thumbnail": "images/publications/city-trees.jpg",
     "video": "",
     "code": "",
     "tags": [
@@ -48,7 +48,7 @@
     "doi": "https://openaccess.thecvf.com/content/CVPR2025/html/Li_Self-Supervised_Large_Scale_Point_Cloud_Completion_for_Archaeological_Site_Restoration_CVPR_2025_paper.html",
     "pdf": "https://openaccess.thecvf.com/content/CVPR2025/papers/Li_Self-Supervised_Large_Scale_Point_Cloud_Completion_for_Archaeological_Site_Restoration_CVPR_2025_paper.pdf",
     "bibtex": "@inproceedings{Li25CVPR,\n  author = {Li, Aocheng and Zimmer-Dauphinee, James and Kalyanam, Rajesh and Lindsay, Ian and VanValkenburgh, Parker and Wernke, Steven A. and Aliaga, Daniel G.},\n  title = {Self-Supervised Large Scale Point Cloud Completion for Archaeological Site Restoration},\n  booktitle = {CVPR},\n  year = {2025}\n}",
-    "thumbnail": "images/publications/archaeology-pointcloud.png",
+    "thumbnail": "images/publications/archaeology-pointcloud.jpg",
     "video": "",
     "code": "",
     "tags": [
@@ -977,7 +977,7 @@
     "doi": "https://doi.org/10.3929/ETHZ-A-007340016",
     "pdf": "https://www.cs.purdue.edu/cgvlab/www/resources/papers/Vitins-TRB-2013-Evaluation_of_Shape_Grammar_Rules_for_Urban_Transport_Network_Design.pdf",
     "bibtex": "@article{garciaevaluation,\n  title  = {Evaluation of Shape Grammar Rules for Urban Transport Network Design},\n  author = {Garcia-Dorado, Ignacio and Vanegas, Carlos A and Aliaga, Daniel G and Axhausen, Kay W},\n  booktitle = {Transportation Research Board 92nd Annual Meeting},\n  year   = {2013},\n  doi    = {10.3929/ETHZ-A-007340016}\n}",
-    "thumbnail": "images/publications/Vitins-TRB-2013-Evaluation_of_Shape_Grammar_Rules_for_Urban_Transport_Network_Design.png",
+    "thumbnail": "images/publications/Vitins-TRB-2013-Evaluation_of_Shape_Grammar_Rules_for_Urban_Transport_Network_Design.jpg",
     "video": "",
     "code": "",
     "tags": [

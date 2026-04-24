@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>URBX Lab — Urban + X</title>
+  <meta name="description" content="URBX Lab (Urban + X) at Purdue Computer Science — research at the intersection of urban computing and disciplines from computer vision to generative AI.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="canonical" href="https://www.cs.purdue.edu/urbx_lab/">
+  <meta property="og:title" content="URBX Lab — Urban + X">
+  <meta property="og:description" content="Research at Purdue CS at the intersection of urban computing and disciplines from computer vision to generative AI.">
+  <meta property="og:image" content="https://www.cs.purdue.edu/urbx_lab/images/carousel/slide-1.jpg">
+  <meta property="og:url" content="https://www.cs.purdue.edu/urbx_lab/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,9 +26,9 @@
       </div>
       <div class="hero-carousel" aria-hidden="true">
         <div class="hero-carousel-track" id="hero-carousel-track">
-          <div class="hero-slide active" style="background-image:url('images/carousel/slide-1.png')"></div>
-          <div class="hero-slide" style="background-image:url('images/carousel/slide-2.png')"></div>
-          <div class="hero-slide" style="background-image:url('images/carousel/slide-3.png')"></div>
+          <div class="hero-slide active" style="background-image:url('images/carousel/slide-1.jpg')"></div>
+          <div class="hero-slide" style="background-image:url('images/carousel/slide-2.jpg')"></div>
+          <div class="hero-slide" style="background-image:url('images/carousel/slide-3.jpg')"></div>
         </div>
         <div class="hero-carousel-dots" id="hero-carousel-dots"></div>
       </div>
@@ -93,7 +102,7 @@
         const projects = await fetchData('data/projects.json');
         document.getElementById('research-highlights').innerHTML = projects.slice(0, 4).map(p => `
           <a href="publications.html?tag=${encodeURIComponent(p.slug)}" class="card" style="text-decoration:none;color:inherit;display:block;">
-            ${p.image ? `<img class="card-img" src="${p.image}" alt="${p.title}" onerror="this.style.display='none'">` : '<div class="card-img" style="background:#e9ecef;display:flex;align-items:center;justify-content:center;color:#adb5bd;font-size:2rem;">&#9635;</div>'}
+            ${p.image ? `<img class="card-img" src="${p.image}" alt="${p.title}" loading="lazy" onerror="this.style.display='none'">` : '<div class="card-img" style="background:#e9ecef;display:flex;align-items:center;justify-content:center;color:#adb5bd;font-size:2rem;">&#9635;</div>'}
             <div class="card-body">
               <h3>${p.title}</h3>
               <p>${p.description}</p>
@@ -109,7 +118,7 @@
         document.getElementById('latest-publications').innerHTML = sorted.map(p => `
           <div class="pub-card">
             ${p.thumbnail
-              ? `<img class="pub-thumb" src="${p.thumbnail}" alt="" onerror="this.style.display='none'">`
+              ? `<img class="pub-thumb" src="${p.thumbnail}" alt="${p.title}" loading="lazy" onerror="this.style.display='none'">`
               : `<div class="pub-thumb" style="display:flex;align-items:center;justify-content:center;background:#e9ecef;color:#adb5bd;font-size:1.5rem;">&#128196;</div>`}
             <div class="pub-info">
               <h3><a href="publication.html?id=${p.slug}">${p.title}</a></h3>
